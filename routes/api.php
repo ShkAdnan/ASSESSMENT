@@ -18,4 +18,4 @@ Route::post('send_invitation', [AuthController::class , 'sendEmail']);
 Route::post('register', [AuthController::class , 'registerUser'])->name('registerUser');
 Route::post('login', [AuthController::class , 'loginUser'])->name('login');
 Route::post('verify', [AuthController::class , 'verifyUser'])->name('verifyUser');
-Route::post('update', [AuthController::class , 'updateUser'])->middleware('auth');
+Route::put('update', [AuthController::class , 'updateUser'])->middleware('auth');
